@@ -1,2 +1,2 @@
-# old goodies
+## Scripts & Tricks
 Scripts for oodles of things
