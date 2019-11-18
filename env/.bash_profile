@@ -1,4 +1,5 @@
 alias ll='ls -lahG'
+alias chrome="open -a \"Google Chrome\".app"
 
 if  [[ -f "~/.git-completion.bash" ]]; then
 	source ~/.git-completion.bash
