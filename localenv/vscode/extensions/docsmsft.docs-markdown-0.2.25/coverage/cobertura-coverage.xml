@@ -1,0 +1,571 @@
+<?xml version="1.0" ?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage lines-valid="262" lines-covered="245" line-rate="0.9351" branches-valid="111" branches-covered="101" branch-rate="0.9098999999999999" timestamp="1573857243967" complexity="0" version="0.1">
+  <sources>
+    <source>d:\_work\1\s\docs-markdown</source>
+  </sources>
+  <packages>
+    <package name="markdownlint-custom-rules" line-rate="1" branch-rate="0.9672">
+      <classes>
+        <class name="alert.js" filename="markdownlint-custom-rules\alert.js" line-rate="1" branch-rate="0.9231">
+          <methods>
+            <method name="rule" hits="1" signature="()V">
+              <lines>
+                <line number="12" hits="1"/>
+              </lines>
+            </method>
+            <method name="filterToken" hits="80" signature="()V">
+              <lines>
+                <line number="13" hits="80"/>
+              </lines>
+            </method>
+            <method name="forToken" hits="22" signature="()V">
+              <lines>
+                <line number="15" hits="22"/>
+              </lines>
+            </method>
+            <method name="filterChild" hits="24" signature="()V">
+              <lines>
+                <line number="16" hits="24"/>
+              </lines>
+            </method>
+            <method name="forChild" hits="23" signature="()V">
+              <lines>
+                <line number="18" hits="23"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="1" branch="false"/>
+            <line number="6" hits="1" branch="false"/>
+            <line number="8" hits="1" branch="false"/>
+            <line number="13" hits="1" branch="false"/>
+            <line number="14" hits="80" branch="false"/>
+            <line number="16" hits="22" branch="false"/>
+            <line number="17" hits="24" branch="false"/>
+            <line number="20" hits="23" branch="false"/>
+            <line number="23" hits="23" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="25" hits="6" branch="true" condition-coverage="100% (5/5)"/>
+            <line number="26" hits="3" branch="false"/>
+            <line number="35" hits="23" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="37" hits="2" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="38" hits="2" branch="false"/>
+            <line number="51" hits="23" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="52" hits="1" branch="false"/>
+          </lines>
+        </class>
+        <class name="common.js" filename="markdownlint-custom-rules\common.js" line-rate="1" branch-rate="1">
+          <methods>
+          </methods>
+          <lines>
+            <line number="6" hits="5" branch="false"/>
+            <line number="7" hits="5" branch="false"/>
+            <line number="8" hits="5" branch="false"/>
+            <line number="9" hits="5" branch="false"/>
+            <line number="12" hits="5" branch="false"/>
+            <line number="13" hits="5" branch="false"/>
+            <line number="14" hits="5" branch="false"/>
+            <line number="18" hits="5" branch="false"/>
+            <line number="19" hits="5" branch="false"/>
+            <line number="20" hits="5" branch="false"/>
+            <line number="21" hits="5" branch="false"/>
+            <line number="22" hits="5" branch="false"/>
+            <line number="23" hits="5" branch="false"/>
+            <line number="26" hits="5" branch="false"/>
+            <line number="27" hits="5" branch="false"/>
+            <line number="28" hits="5" branch="false"/>
+            <line number="31" hits="5" branch="false"/>
+            <line number="32" hits="5" branch="false"/>
+            <line number="33" hits="5" branch="false"/>
+            <line number="34" hits="5" branch="false"/>
+            <line number="35" hits="5" branch="false"/>
+            <line number="36" hits="5" branch="false"/>
+            <line number="37" hits="5" branch="false"/>
+            <line number="40" hits="5" branch="false"/>
+            <line number="41" hits="5" branch="false"/>
+            <line number="42" hits="5" branch="false"/>
+            <line number="43" hits="5" branch="false"/>
+            <line number="44" hits="5" branch="false"/>
+            <line number="45" hits="5" branch="false"/>
+            <line number="46" hits="5" branch="false"/>
+            <line number="47" hits="5" branch="false"/>
+            <line number="48" hits="5" branch="false"/>
+            <line number="49" hits="5" branch="false"/>
+            <line number="50" hits="5" branch="false"/>
+            <line number="53" hits="5" branch="false"/>
+            <line number="54" hits="5" branch="false"/>
+            <line number="55" hits="5" branch="false"/>
+            <line number="56" hits="5" branch="false"/>
+            <line number="57" hits="5" branch="false"/>
+            <line number="58" hits="5" branch="false"/>
+            <line number="63" hits="5" branch="false"/>
+            <line number="66" hits="5" branch="false"/>
+            <line number="69" hits="5" branch="false"/>
+            <line number="70" hits="5" branch="false"/>
+            <line number="71" hits="5" branch="false"/>
+            <line number="72" hits="5" branch="false"/>
+            <line number="73" hits="5" branch="false"/>
+            <line number="74" hits="5" branch="false"/>
+            <line number="75" hits="5" branch="false"/>
+            <line number="76" hits="5" branch="false"/>
+            <line number="79" hits="5" branch="false"/>
+            <line number="80" hits="5" branch="false"/>
+            <line number="83" hits="5" branch="false"/>
+            <line number="84" hits="5" branch="false"/>
+            <line number="85" hits="5" branch="false"/>
+            <line number="86" hits="5" branch="false"/>
+          </lines>
+        </class>
+        <class name="moniker.js" filename="markdownlint-custom-rules\moniker.js" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="rule" hits="1" signature="()V">
+              <lines>
+                <line number="12" hits="1"/>
+              </lines>
+            </method>
+            <method name="filterToken" hits="81" signature="()V">
+              <lines>
+                <line number="13" hits="81"/>
+              </lines>
+            </method>
+            <method name="forToken" hits="27" signature="()V">
+              <lines>
+                <line number="15" hits="27"/>
+              </lines>
+            </method>
+            <method name="filterChild" hits="31" signature="()V">
+              <lines>
+                <line number="16" hits="31"/>
+              </lines>
+            </method>
+            <method name="forChild" hits="29" signature="()V">
+              <lines>
+                <line number="18" hits="29"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="1" branch="false"/>
+            <line number="6" hits="1" branch="false"/>
+            <line number="8" hits="1" branch="false"/>
+            <line number="13" hits="1" branch="false"/>
+            <line number="14" hits="81" branch="false"/>
+            <line number="16" hits="27" branch="false"/>
+            <line number="17" hits="31" branch="false"/>
+            <line number="19" hits="29" branch="false"/>
+            <line number="21" hits="29" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="23" hits="18" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="24" hits="4" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="25" hits="1" branch="false"/>
+            <line number="33" hits="18" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="34" hits="1" branch="false"/>
+          </lines>
+        </class>
+        <class name="securelinks.js" filename="markdownlint-custom-rules\securelinks.js" line-rate="1" branch-rate="0.8332999999999999">
+          <methods>
+            <method name="rule" hits="1" signature="()V">
+              <lines>
+                <line number="11" hits="1"/>
+              </lines>
+            </method>
+            <method name="filterToken" hits="39" signature="()V">
+              <lines>
+                <line number="12" hits="39"/>
+              </lines>
+            </method>
+            <method name="forToken" hits="13" signature="()V">
+              <lines>
+                <line number="14" hits="13"/>
+              </lines>
+            </method>
+            <method name="filterChild" hits="25" signature="()V">
+              <lines>
+                <line number="15" hits="25"/>
+              </lines>
+            </method>
+            <method name="forToken" hits="6" signature="()V">
+              <lines>
+                <line number="17" hits="6"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="1" branch="false"/>
+            <line number="7" hits="1" branch="false"/>
+            <line number="12" hits="1" branch="false"/>
+            <line number="13" hits="39" branch="false"/>
+            <line number="15" hits="13" branch="false"/>
+            <line number="16" hits="25" branch="false"/>
+            <line number="18" hits="6" branch="true" condition-coverage="75% (3/4)"/>
+            <line number="19" hits="6" branch="false"/>
+            <line number="20" hits="6" branch="false"/>
+            <line number="21" hits="6" branch="false"/>
+            <line number="22" hits="6" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="23" hits="3" branch="false"/>
+            <line number="24" hits="3" branch="false"/>
+            <line number="25" hits="3" branch="false"/>
+            <line number="26" hits="3" branch="false"/>
+            <line number="27" hits="3" branch="false"/>
+          </lines>
+        </class>
+        <class name="strings.js" filename="markdownlint-custom-rules\strings.js" line-rate="1" branch-rate="1">
+          <methods>
+          </methods>
+          <lines>
+            <line number="2" hits="5" branch="false"/>
+            <line number="3" hits="5" branch="false"/>
+            <line number="4" hits="5" branch="false"/>
+            <line number="5" hits="5" branch="false"/>
+            <line number="8" hits="5" branch="false"/>
+            <line number="9" hits="5" branch="false"/>
+            <line number="12" hits="5" branch="false"/>
+            <line number="13" hits="5" branch="false"/>
+            <line number="14" hits="5" branch="false"/>
+            <line number="15" hits="5" branch="false"/>
+            <line number="16" hits="5" branch="false"/>
+            <line number="17" hits="5" branch="false"/>
+            <line number="20" hits="5" branch="false"/>
+            <line number="21" hits="5" branch="false"/>
+            <line number="22" hits="5" branch="false"/>
+            <line number="23" hits="5" branch="false"/>
+            <line number="24" hits="5" branch="false"/>
+            <line number="25" hits="5" branch="false"/>
+            <line number="26" hits="5" branch="false"/>
+            <line number="27" hits="5" branch="false"/>
+            <line number="28" hits="5" branch="false"/>
+            <line number="31" hits="5" branch="false"/>
+            <line number="32" hits="5" branch="false"/>
+            <line number="33" hits="5" branch="false"/>
+            <line number="36" hits="5" branch="false"/>
+            <line number="37" hits="5" branch="false"/>
+            <line number="38" hits="5" branch="false"/>
+            <line number="41" hits="5" branch="false"/>
+            <line number="42" hits="5" branch="false"/>
+            <line number="43" hits="5" branch="false"/>
+            <line number="44" hits="5" branch="false"/>
+            <line number="45" hits="5" branch="false"/>
+            <line number="46" hits="5" branch="false"/>
+            <line number="47" hits="5" branch="false"/>
+            <line number="50" hits="5" branch="false"/>
+            <line number="53" hits="5" branch="false"/>
+            <line number="54" hits="5" branch="false"/>
+          </lines>
+        </class>
+        <class name="syntax.js" filename="markdownlint-custom-rules\syntax.js" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="rule" hits="1" signature="()V">
+              <lines>
+                <line number="12" hits="1"/>
+              </lines>
+            </method>
+            <method name="filterToken" hits="81" signature="()V">
+              <lines>
+                <line number="13" hits="81"/>
+              </lines>
+            </method>
+            <method name="forToken" hits="27" signature="()V">
+              <lines>
+                <line number="15" hits="27"/>
+              </lines>
+            </method>
+            <method name="filterChild" hits="31" signature="()V">
+              <lines>
+                <line number="16" hits="31"/>
+              </lines>
+            </method>
+            <method name="forChild" hits="29" signature="()V">
+              <lines>
+                <line number="18" hits="29"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="1" branch="false"/>
+            <line number="6" hits="1" branch="false"/>
+            <line number="8" hits="1" branch="false"/>
+            <line number="13" hits="1" branch="false"/>
+            <line number="14" hits="81" branch="false"/>
+            <line number="16" hits="27" branch="false"/>
+            <line number="17" hits="31" branch="false"/>
+            <line number="19" hits="29" branch="false"/>
+            <line number="21" hits="29" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="23" hits="18" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="24" hits="1" branch="false"/>
+          </lines>
+        </class>
+        <class name="zone.js" filename="markdownlint-custom-rules\zone.js" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="rule" hits="1" signature="()V">
+              <lines>
+                <line number="12" hits="1"/>
+              </lines>
+            </method>
+            <method name="filterToken" hits="81" signature="()V">
+              <lines>
+                <line number="13" hits="81"/>
+              </lines>
+            </method>
+            <method name="forToken" hits="27" signature="()V">
+              <lines>
+                <line number="15" hits="27"/>
+              </lines>
+            </method>
+            <method name="filterChild" hits="31" signature="()V">
+              <lines>
+                <line number="16" hits="31"/>
+              </lines>
+            </method>
+            <method name="forChild" hits="29" signature="()V">
+              <lines>
+                <line number="18" hits="29"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="1" branch="false"/>
+            <line number="6" hits="1" branch="false"/>
+            <line number="8" hits="1" branch="false"/>
+            <line number="13" hits="1" branch="false"/>
+            <line number="14" hits="81" branch="false"/>
+            <line number="16" hits="27" branch="false"/>
+            <line number="17" hits="31" branch="false"/>
+            <line number="19" hits="29" branch="false"/>
+            <line number="21" hits="29" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="23" hits="18" branch="true" condition-coverage="100% (6/6)"/>
+            <line number="24" hits="1" branch="false"/>
+            <line number="31" hits="18" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="32" hits="5" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="33" hits="1" branch="false"/>
+            <line number="41" hits="18" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="42" hits="5" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="43" hits="2" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="src.constants" line-rate="1" branch-rate="1">
+      <classes>
+        <class name="alert-tags.ts" filename="src\constants\alert-tags.ts" line-rate="1" branch-rate="1">
+          <methods>
+          </methods>
+          <lines>
+            <line number="3" hits="1" branch="false"/>
+          </lines>
+        </class>
+        <class name="alert-type.ts" filename="src\constants\alert-type.ts" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="(anonymous_0)" hits="1" signature="()V">
+              <lines>
+                <line number="3" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="1" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="4" hits="1" branch="false"/>
+            <line number="5" hits="1" branch="false"/>
+            <line number="6" hits="1" branch="false"/>
+            <line number="7" hits="1" branch="false"/>
+            <line number="8" hits="1" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="src.helper" line-rate="0.8068000000000001" branch-rate="0.8332999999999999">
+      <classes>
+        <class name="alerts.ts" filename="src\helper\alerts.ts" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="getAlertType" hits="4" signature="()V">
+              <lines>
+                <line number="8" hits="4"/>
+              </lines>
+            </method>
+            <method name="(anonymous_1)" hits="14" signature="()V">
+              <lines>
+                <line number="9" hits="14"/>
+              </lines>
+            </method>
+            <method name="isAlert" hits="6" signature="()V">
+              <lines>
+                <line number="17" hits="6"/>
+              </lines>
+            </method>
+            <method name="(anonymous_3)" hits="24" signature="()V">
+              <lines>
+                <line number="19" hits="24"/>
+              </lines>
+            </method>
+            <method name="(anonymous_4)" hits="10" signature="()V">
+              <lines>
+                <line number="20" hits="10"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="1" branch="false"/>
+            <line number="8" hits="1" branch="false"/>
+            <line number="9" hits="14" branch="false"/>
+            <line number="17" hits="1" branch="false"/>
+            <line number="19" hits="24" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="20" hits="10" branch="false"/>
+            <line number="21" hits="4" branch="false"/>
+            <line number="23" hits="2" branch="false"/>
+          </lines>
+        </class>
+        <class name="bookmark-builder.ts" filename="src\helper\bookmark-builder.ts" line-rate="0.4643" branch-rate="0.4">
+          <methods>
+            <method name="addbookmarkIdentifier" hits="0" signature="()V">
+              <lines>
+                <line number="10" hits="0"/>
+              </lines>
+            </method>
+            <method name="bookmarkBuilder" hits="3" signature="()V">
+              <lines>
+                <line number="42" hits="3"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="10" hits="1" branch="false"/>
+            <line number="12" hits="0" branch="false"/>
+            <line number="13" hits="0" branch="false"/>
+            <line number="16" hits="0" branch="false"/>
+            <line number="18" hits="0" branch="false"/>
+            <line number="22" hits="0" branch="true" condition-coverage="0% (0/2)"/>
+            <line number="23" hits="0" branch="false"/>
+            <line number="24" hits="0" branch="false"/>
+            <line number="25" hits="0" branch="false"/>
+            <line number="28" hits="0" branch="false"/>
+            <line number="29" hits="0" branch="false"/>
+            <line number="33" hits="0" branch="false"/>
+            <line number="42" hits="1" branch="false"/>
+            <line number="43" hits="3" branch="false"/>
+            <line number="44" hits="3" branch="false"/>
+            <line number="47" hits="3" branch="false"/>
+            <line number="51" hits="3" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="53" hits="0" branch="false"/>
+            <line number="54" hits="0" branch="false"/>
+            <line number="58" hits="3" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="59" hits="0" branch="false"/>
+            <line number="63" hits="3" branch="false"/>
+            <line number="65" hits="3" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="66" hits="3" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="67" hits="3" branch="false"/>
+            <line number="70" hits="3" branch="false"/>
+            <line number="72" hits="0" branch="false"/>
+            <line number="75" hits="3" branch="false"/>
+          </lines>
+        </class>
+        <class name="format-styles.ts" filename="src\helper\format-styles.ts" line-rate="0.9714" branch-rate="0.9643">
+          <methods>
+            <method name="isInlineCode" hits="8" signature="()V">
+              <lines>
+                <line number="9" hits="8"/>
+              </lines>
+            </method>
+            <method name="isMultiLineCode" hits="7" signature="()V">
+              <lines>
+                <line number="25" hits="7"/>
+              </lines>
+            </method>
+            <method name="isBoldAndItalic" hits="28" signature="()V">
+              <lines>
+                <line number="42" hits="28"/>
+              </lines>
+            </method>
+            <method name="isBold" hits="16" signature="()V">
+              <lines>
+                <line number="60" hits="16"/>
+              </lines>
+            </method>
+            <method name="isItalic" hits="8" signature="()V">
+              <lines>
+                <line number="82" hits="8"/>
+              </lines>
+            </method>
+            <method name="bold" hits="10" signature="()V">
+              <lines>
+                <line number="103" hits="10"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="2" branch="false"/>
+            <line number="10" hits="8" branch="false"/>
+            <line number="12" hits="8" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="13" hits="2" branch="false"/>
+            <line number="16" hits="6" branch="false"/>
+            <line number="25" hits="2" branch="false"/>
+            <line number="27" hits="7" branch="false"/>
+            <line number="29" hits="7" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="30" hits="1" branch="false"/>
+            <line number="33" hits="6" branch="false"/>
+            <line number="42" hits="2" branch="false"/>
+            <line number="45" hits="28" branch="false"/>
+            <line number="47" hits="28" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="48" hits="4" branch="false"/>
+            <line number="51" hits="24" branch="false"/>
+            <line number="60" hits="2" branch="false"/>
+            <line number="63" hits="16" branch="false"/>
+            <line number="65" hits="16" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="66" hits="7" branch="false"/>
+            <line number="69" hits="9" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="70" hits="0" branch="false"/>
+            <line number="73" hits="9" branch="false"/>
+            <line number="82" hits="2" branch="false"/>
+            <line number="85" hits="8" branch="false"/>
+            <line number="87" hits="8" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="88" hits="2" branch="false"/>
+            <line number="91" hits="6" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="92" hits="2" branch="false"/>
+            <line number="95" hits="4" branch="false"/>
+            <line number="103" hits="2" branch="false"/>
+            <line number="106" hits="10" branch="false"/>
+            <line number="108" hits="10" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="110" hits="5" branch="false"/>
+            <line number="114" hits="5" branch="false"/>
+            <line number="115" hits="5" branch="false"/>
+          </lines>
+        </class>
+        <class name="format.ts" filename="src\helper\format.ts" line-rate="0.9412" branch-rate="0.8332999999999999">
+          <methods>
+            <method name="format" hits="6" signature="()V">
+              <lines>
+                <line number="13" hits="6"/>
+              </lines>
+            </method>
+            <method name="(anonymous_1)" hits="5" signature="()V">
+              <lines>
+                <line number="27" hits="5"/>
+              </lines>
+            </method>
+            <method name="(anonymous_2)" hits="3" signature="()V">
+              <lines>
+                <line number="40" hits="3"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="1" branch="false"/>
+            <line number="3" hits="1" branch="false"/>
+            <line number="13" hits="1" branch="false"/>
+            <line number="14" hits="6" branch="false"/>
+            <line number="21" hits="6" branch="false"/>
+            <line number="22" hits="6" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="23" hits="4" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="27" hits="5" branch="false"/>
+            <line number="28" hits="2" branch="false"/>
+            <line number="31" hits="2" branch="false"/>
+            <line number="32" hits="2" branch="false"/>
+            <line number="33" hits="2" branch="false"/>
+            <line number="36" hits="2" branch="true" condition-coverage="50% (1/2)"/>
+            <line number="37" hits="0" branch="false"/>
+            <line number="40" hits="3" branch="false"/>
+            <line number="41" hits="2" branch="false"/>
+            <line number="42" hits="2" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

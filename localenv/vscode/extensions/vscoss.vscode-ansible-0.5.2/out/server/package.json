@@ -1,0 +1,30 @@
+{
+    "name": "ansible",
+    "description": "Ansible Playbook Language Server",
+    "version": "0.0.1",
+    "author": "yungez",
+    "license": "MIT",
+    "engines": {
+        "node": "*"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vschina/vscode-ansible.git"
+    },
+    "scripts": {
+        "installserver": "installServerIntoExtension ../out ./package.json ./tsconfig.json",
+        "compile": "tsc -p ./ && installServerIntoExtension ../out ./package.json ./tsconfig.json",
+        "watch": "tsc -w -p ./ && installServerIntoExtension ../out ./package.json ./tsconfig.json",
+        "pkgvars": "node ./node_modules/vscode/bin/install"
+    },
+    "dependencies": {
+        "es6-promisify": "^6.0.0",
+        "fs-extra": "^5.0.0",
+        "request-light": "^0.2.3",
+        "typescript": "^2.9.2",
+        "vscode-json-languageservice": "^3.2.0",
+        "vscode-languageserver": "^3.5.1",
+        "vscode-languageserver-protocol": "3.5.0",
+        "yaml-language-server": "0.0.18"
+    }
+}

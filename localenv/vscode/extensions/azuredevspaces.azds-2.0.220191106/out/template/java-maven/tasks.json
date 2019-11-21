@@ -1,0 +1,18 @@
+[
+    {
+        "label": "azds: prelaunch",
+        "command": "azds",
+        "args": [
+            "up",
+            "--port=$randomPort1$:7000",
+            "--detach",
+            "--keep-alive",
+            "--command",
+            "/javadebug/start.sh"
+        ],
+        "options": {
+            "cwd": "${workspaceFolder}"
+        },
+        "problemMatcher": []
+    }
+]

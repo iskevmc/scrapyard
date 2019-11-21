@@ -1,0 +1,254 @@
+<h1 id="a-idtopaaws-toolkit-for-visual-studio-code"><a id="top"></a>AWS Toolkit for Visual Studio Code</h1>
+<p>The <em>AWS Toolkit for Visual Studio Code</em> is an extension that enables you to interact with certain services of <a href="https://aws.amazon.com/what-is-aws/">Amazon Web Services (AWS)</a> from within the Visual Studio Code editor.</p>
+<p>The following screenshots show important parts of the Toolkit.</p>
+<h3 id="a-idui-componentsafundamental-ui-components"><a id="ui-components"></a>Fundamental UI Components</h3>
+<p><img src="!!EXTENSIONROOT!!/resources/marketplace/overview.png" alt="Overview"></p>
+<h3 id="a-idopen-command-paletteaaws-commands-in-the-command-palette"><a id="open-command-palette"></a>AWS Commands in the Command Palette</h3>
+<p><img src="!!EXTENSIONROOT!!/resources/marketplace/open-command-palette.gif" alt="Command Palette"></p>
+<hr>
+<h1 id="a-idcontentsacontents"><a id="contents"></a>Contents</h1>
+<ul>
+<li><a href="#features">Features</a></li>
+<li><a href="#additional-setup-steps">Setup</a></li>
+<li><a href="#aws-commands">AWS Commands</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#get-help">Get Help</a></li>
+</ul>
+<p>{ <a href="#top">Return to Top</a> }</p>
+<hr>
+<h1 id="a-idfeaturesafeatures"><a id="features"></a>Features</h1>
+<p>You can use the AWS Toolkit for Visual Studio Code as follows:</p>
+<ul>
+<li><p>Develop serverless applications locally, and then deploy them to an AWS account (see <a href="#usage">Usage</a>)</p>
+</li>
+<li><p>Manage certain supported AWS resources in an AWS account (see <a href="#usage">Usage</a>).</p>
+<p>This includes:</p>
+<ul>
+<li>Listing and deleting AWS CloudFormation stacks</li>
+<li>Listing and invoking AWS Lambda functions</li>
+</ul>
+<p>For example:</p>
+<p><img src="!!EXTENSIONROOT!!/resources/marketplace/aws-explorer.png" alt="AWS Explorer"></p>
+</li>
+</ul>
+<p>{ <a href="#contents">Return to Contents</a> } or { <a href="#top">Return to Top</a> }</p>
+<hr>
+<h1 id="a-idadditional-setup-stepsasetup"><a id="additional-setup-steps"></a>Setup</h1>
+<p>After you install the AWS Toolkit for Visual Studio Code, to access most of its features, you must complete the additional steps defined in the <a href="https://docs.aws.amazon.com/console/toolkit-for-vscode/getting-started">Getting Started</a> topic of the <em>AWS Toolkit for Visual Studio Code User Guide</em>. These additional steps include the following:</p>
+<ol>
+<li>Create an AWS account (see the <a href="https://docs.aws.amazon.com/console/toolkit-for-vscode/setup-toolkit#setup-prereq">Prerequisites</a> in the user guide and also these <a href="https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/">additional details</a>)</li>
+<li>Create and configure a set of AWS credentials (see <strong>Step 1</strong> of <a href="#managing-aws-resources">Managing AWS Resources</a>)</li>
+<li>Connect the Toolkit to AWS using those credentials (see <strong>Step 2</strong> of <a href="#managing-aws-resources">Managing AWS Resources</a>)</li>
+</ol>
+<p>To use this Toolkit to develop <a href="https://aws.amazon.com/serverless/">serverless applications with AWS</a>, you must also do the following on the local machine where the Toolkit is installed:</p>
+<ol>
+<li>Install the AWS Command Line Interface (AWS CLI)</li>
+<li>Install and start Docker (also see this general information about <a href="https://docs.docker.com/install/">Docker</a>)</li>
+<li>Install the AWS SAM CLI</li>
+</ol>
+<p>See <a href="https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html">Installing the AWS SAM CLI</a> for complete setup instructions for these three components.</p>
+<p>{ <a href="#contents">Return to Contents</a> } or { <a href="#top">Return to Top</a> }</p>
+<hr>
+<h1 id="a-idaws-commandsaaws-commands"><a id="aws-commands"></a>AWS Commands</h1>
+<p>The AWS Toolkit for Visual Studio Code has several features that you can access through the <a href="#open-command-palette">Command Palette</a> (select <strong>View</strong>, then <strong>Command Palette</strong>):</p>
+<table>
+<thead>
+<tr>
+<th align="left">AWS Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>AWS: Create Credentials Profile</strong></td>
+<td align="left">Creates an AWS credentials profile. For more information, see <strong>Step 1</strong> in <a href="#managing-aws-resources">Managing AWS Resources</a>.</td>
+</tr>
+<tr>
+<td align="left"><strong>AWS: Connect to AWS</strong></td>
+<td align="left">Connects the Toolkit to an AWS account. For more information, see <strong>Step 2</strong> in <a href="#managing-aws-resources">Managing AWS Resources</a>.</td>
+</tr>
+<tr>
+<td align="left"><strong>AWS: Create New SAM Application</strong></td>
+<td align="left">Generates a set of code files for a new AWS serverless application. For more information, see <a href="#create-serverless-application">Create a Serverless Application</a>.</td>
+</tr>
+<tr>
+<td align="left"><strong>AWS: Deploy SAM Application</strong></td>
+<td align="left">Deploys a local serverless application to an AWS account. For more information, see <a href="#deploy-serverless-application">Deploy a Serverless Application</a>.</td>
+</tr>
+<tr>
+<td align="left"><strong>AWS: Detect SAM CLI</strong></td>
+<td align="left">Checks whether the Toolkit can communicate correctly with the AWS SAM CLI that is installed.</td>
+</tr>
+<tr>
+<td align="left"><strong>AWS: Focus on Explorer View</strong></td>
+<td align="left">Opens the <strong>AWS: Explorer</strong> Side Bar, which we will simply call <a href="#ui-components"><em>the <strong>AWS Explorer</strong></em></a>, and then moves the focus there.</td>
+</tr>
+<tr>
+<td align="left"><strong>AWS: Hide region from the Explorer</strong></td>
+<td align="left">Hides an AWS Region from the <strong>AWS Explorer</strong>.</td>
+</tr>
+<tr>
+<td align="left"><strong>AWS: Show region in the Explorer</strong></td>
+<td align="left">Displays an AWS Region in the <strong>AWS Explorer</strong>.</td>
+</tr>
+<tr>
+<td align="left"><strong>AWS: Sign out</strong></td>
+<td align="left">Disconnects the Toolkit from the currently-connected AWS account.</td>
+</tr>
+<tr>
+<td align="left"><strong>AWS: View AWS Toolkit Logs</strong></td>
+<td align="left">Displays log files that contain general Toolkit diagnostic information.</td>
+</tr>
+<tr>
+<td align="left"><strong>AWS: View Quick Start</strong></td>
+<td align="left">Open this quick-start guide.</td>
+</tr>
+<tr>
+<td align="left"><strong>AWS: View Documentation</strong></td>
+<td align="left">Opens the <a href="https://docs.aws.amazon.com/console/toolkit-for-vscode/welcome">user guide</a> for the Toolkit.</td>
+</tr>
+<tr>
+<td align="left"><strong>AWS: View Source on GitHub</strong></td>
+<td align="left">Opens the <a href="https://github.com/aws/aws-toolkit-vscode">GitHub repository</a> for the Toolkit.</td>
+</tr>
+<tr>
+<td align="left"><strong>AWS: Report an Issue</strong></td>
+<td align="left">In the <a href="https://github.com/aws/aws-toolkit-vscode">GitHub repository</a> for the Toolkit, opens the page to <a href="https://github.com/aws/aws-toolkit-vscode/issues/new/choose">create a new issue</a>.</td>
+</tr>
+</tbody></table>
+<p>{ <a href="#contents">Return to Contents</a> } or { <a href="#top">Return to Top</a> }</p>
+<hr>
+<h1 id="a-idusageausage"><a id="usage"></a>Usage</h1>
+<ul>
+<li><a href="#managing-aws-resources">Managing AWS Resources</a></li>
+<li><a href="#developing-serverless-applications">Developing Serverless Applications</a></li>
+</ul>
+<p>{ <a href="#contents">Return to Contents</a> } or { <a href="#top">Return to Top</a> }</p>
+<h2 id="a-idmanaging-aws-resourcesausage-managing-aws-resources"><a id="managing-aws-resources"></a>Usage: Managing AWS Resources</h2>
+<h3 id="step-1-set-up-a-credentials-profile"><strong>Step 1</strong>: Set Up a Credentials Profile</h3>
+<p>(<em>Note</em>: If you already have an AWS credentials profile, skip ahead to &quot;<strong>Step 2: Connect to an AWS Account</strong>&quot;.)</p>
+<p>For complete instructions, see <a href="https://docs.aws.amazon.com/console/toolkit-for-vscode/setup-credentials">Setting Up Your AWS Credentials</a> in the <em>AWS Toolkit for Visual Studio Code User Guide</em>.</p>
+<p>   In summary:</p>
+<ol>
+<li>On the menu bar, choose <strong>View, Command Palette</strong>.</li>
+<li>Begin typing: &quot;<strong>AWS: Create Credentials Profile</strong>&quot; and choose that command when you see it.</li>
+<li>Follow the on-screen instructions to add an AWS credentials profile to your environment. </li>
+</ol>
+<p><code>________________</code></p>
+<h3 id="step-2-connect-to-an-aws-account"><strong>Step 2</strong>: Connect to an AWS Account</h3>
+<p>For complete instructions, see <a href="https://docs.aws.amazon.com/console/toolkit-for-vscode/connect">Connect to AWS</a> in the <em>AWS Toolkit for Visual Studio Code User Guide</em> .</p>
+<p>In summary:</p>
+<ol>
+<li>On the menu bar, choose <strong>View, Command Palette</strong>.</li>
+<li>Begin typing &quot;<strong>AWS: Connect to AWS</strong>&quot; and choose that command when you see it.</li>
+<li>In the list of AWS credentials profiles, choose the profile that you want to use.</li>
+</ol>
+<p><code>________________</code></p>
+<h3 id="step-3-work-with-available-aws-resources"><strong>Step 3</strong>: Work with Available AWS Resources</h3>
+<p>For complete information, see <a href="https://docs.aws.amazon.com/console/toolkit-for-vscode/working-with-aws">Working with AWS Services</a> in the <em>AWS Toolkit for Visual Studio Code User Guide</em> .</p>
+<ol>
+<li><p>If the <strong>AWS Explorer</strong> isn&#39;t showing, open it by choosing the <strong>AWS</strong> icon in the Activity Bar:
+<img src="!!EXTENSIONROOT!!/resources/marketplace/aws-explorer-icon.png" alt="AWS Explorer Icon"></p>
+</li>
+<li><p>If you have existing resources in your AWS account but they aren&#39;t being displayed in the <strong>AWS Explorer</strong> (and assuming that your credentials and a connection have been set up properly), choose the <strong>Refresh</strong> icon in the <strong>AWS Explorer</strong> to show them. </p>
+</li>
+<li><p>Expand the AWS Region that contains the resource that you want to manage.</p>
+<p>(<strong>Note</strong>: To show or hide AWS regions, choose <strong>View, Command Palette</strong> on the menu bar, and then choose <strong>AWS: Show region in the Explorer</strong> or <strong>AWS: Hide region from the Explorer</strong>.)</p>
+</li>
+<li><p>Expand the supported AWS service that contains the resource that you want to manage.</p>
+<p>(<strong>Note</strong>: Not all services are currently supported.)</p>
+</li>
+<li><p>If applicable, expand the parent resource that contains the child resource that you want to manage.</p>
+</li>
+<li><p>Open the context menu of the resource you want to manage and choose one of the available actions.</p>
+<p>(<strong>Note</strong>: Not all service actions are currently supported.)</p>
+</li>
+</ol>
+<p>{ <a href="#usage">Return to Usage</a> }</p>
+<h2 id="a-iddeveloping-serverless-applicationsausage-developing-serverless-applications"><a id="developing-serverless-applications"></a>Usage: Developing Serverless Applications</h2>
+<p>You can use the AWS Toolkit for Visual Studio Code to create, run, debug, and deploy serverless applications.</p>
+<ul>
+<li><a href="#create-serverless-application">Create a Serverless Application</a></li>
+<li><a href="#run-debug-serverless-application">Run or Debug a Serverless Application</a></li>
+<li><a href="#deploy-serverless-application">Deploy a Serverless Application</a></li>
+</ul>
+<p>{ <a href="#usage">Return to Usage</a> }</p>
+<h3 id="a-idcreate-serverless-applicationastep-1-create-a-serverless-application"><a id="create-serverless-application"></a><strong>Step 1</strong>: Create a Serverless Application</h3>
+<p>For complete instructions, see <a href="https://docs.aws.amazon.com/console/toolkit-for-vscode/create-sam">Creating a Serverless Application</a> in the <em>AWS Toolkit for Visual Studio Code User Guide</em>.</p>
+<p>In summary:</p>
+<ol>
+<li><p>On the menu bar, choose <strong>View, Command Palette</strong>.</p>
+</li>
+<li><p>Begin typing &quot;<strong>AWS: Create new SAM Application</strong>&quot; and choose that command when you see it.</p>
+<p><img src="!!EXTENSIONROOT!!/resources/marketplace/create-sam-app-still.png" alt="Create SAM App 1"></p>
+</li>
+<li><p>Follow the on-screen instructions to finish creating the SAM application, including:</p>
+<ol>
+<li>Choosing the application runtime.</li>
+<li>Selecting or creating a workspace folder for the project.</li>
+<li>Entering a name for the application</li>
+</ol>
+<p>The Toolkit produces the application code and files, adds them to the location you specified, and opens the <code>template.yaml</code> file in the editor.</p>
+<p><img src="!!EXTENSIONROOT!!/resources/marketplace/create-sam-app-still-2.png" alt="Create SAM App 2"></p>
+</li>
+</ol>
+<p>{ <a href="#developing-serverless-applications">Return to Developing</a> } or { <a href="#usage">Return to Usage</a> }</p>
+<p><code>________________</code></p>
+<h3 id="a-idrun-debug-serverless-applicationastep-2-run-or-debug-the-serverless-application"><a id="run-debug-serverless-application"></a><strong>Step 2</strong>: Run or Debug the Serverless Application</h3>
+<p>For complete instructions, see <a href="https://docs.aws.amazon.com/console/toolkit-for-vscode/create-sam#run-debug-sam-app">Run and Debug Your Serverless Application</a> in the <em>AWS Toolkit for Visual Studio Code User Guide</em>.</p>
+<p>In summary:</p>
+<ol>
+<li><p>Select the <strong>AWS</strong> icon in the Activity Bar, <img src="!!EXTENSIONROOT!!/resources/marketplace/aws-explorer-icon.png" alt="AWS Explorer Icon">, to ensure that the AWS Toolkit for Visual Studio Code is running.</p>
+</li>
+<li><p>Select the Project icon in the Activity Bar, <img src="!!EXTENSIONROOT!!/resources/marketplace/project-explorer-icon.png" alt="Project Explorer Icon">, go to the <code>hello-world</code> directory, and open <code>app.js</code>.</p>
+</li>
+<li><p>Select the <strong>Run Locally</strong> CodeLens. (Or, if needed, first select the <strong>Configure</strong> link from the Codelenses, enter event data in <code>templates.json</code>, save, and <em>then</em> select the <strong>Run Locally</strong> CodeLens.)</p>
+<p><img src="!!EXTENSIONROOT!!/resources/marketplace/sam-configure-and-run-still-1.png" alt="Configure and Run 1"></p>
+</li>
+<li><p>Note the run status and results in the <strong>OUTPUT</strong> panel.</p>
+<p><img src="!!EXTENSIONROOT!!/resources/marketplace/sam-configure-and-run-still-2.png" alt="Configure and Run 1"></p>
+</li>
+</ol>
+<h4 id="additional-information">Additional Information</h4>
+<p>After you choose the <strong>AWS</strong> icon in the Activity Bar, CodeLenses appear in serverless-application code files above certain functions. The functions that have these Codelenses are those that use AWS Lambda-function handler syntax. A <em>handler</em> is a function that Lambda calls to start execution of a Lambda function. These CodeLenses enable you to locally run or debug the corresponding serverless application. CodeLens actions in the Toolkit include:</p>
+<ul>
+<li><strong>Configure</strong>, for specifying function configurations such as an event payload and environment variable overrides.</li>
+<li><strong>Run Locally</strong>, for running the function <em>without</em> debugging.</li>
+<li><strong>Debug Locally</strong>, for running the function <em>with</em> debugging.</li>
+</ul>
+<p>(For general information about running and debugging in VS Code, see <a href="https://code.visualstudio.com/docs/editor/debugging">Debugging</a> on the VS Code website.)</p>
+<p>For information about how to work with remote versions of Lambda functions, see <a href="https://docs.aws.amazon.com/console/toolkit-for-vscode/remote-lambda">Interacting with Remote Lambda Functions</a> in the <em>AWS Toolkit for Visual Studio Code User Guide</em>.</p>
+<p>{ <a href="#developing-serverless-applications">Return to Developing</a> } or { <a href="#usage">Return to Usage</a> }</p>
+<p><code>________________</code></p>
+<h3 id="a-iddeploy-serverless-applicationastep-3-deploy-the-serverless-application"><a id="deploy-serverless-application"></a><strong>Step 3</strong>: Deploy the Serverless Application</h3>
+<p>(<em>Note</em>: This procedure uses an Amazon S3 bucket in your AWS account. You can create a bucket ahead of time (see <a href="https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html">How Do I Create an S3 Bucket</a> in the <em>Amazon Simple Storage Service Console User Guide</em>) or run an AWS CLI command that the Toolkit will give you during the procedure, then restart the procedure.)</p>
+<p>For complete instructions, see <a href="https://docs.aws.amazon.com/console/toolkit-for-vscode/deploy-serverless-app">Deploying a Serverless Application</a> in the <em>AWS Toolkit for Visual Studio Code User Guide</em>.</p>
+<p>In summary:</p>
+<ol>
+<li><p>On the menu bar, choose <strong>View, Command Palette</strong>.</p>
+</li>
+<li><p>Begin typing &quot;<strong>AWS: Deploy SAM Application</strong>&quot; and choose that command when you see it.</p>
+<p><img src="!!EXTENSIONROOT!!/resources/marketplace/sam-deploy-still-1.png" alt="Deploy SAM Application 1"></p>
+</li>
+<li><p>Follow the on-screen instructions to finish deploying the serverless application, including:</p>
+<ol>
+<li>Choosing the SAM template file that corresponds with the serverless application you want to deploy.</li>
+<li>Choosing the AWS Region you want to deploy to.</li>
+<li>Specifying the name of an Amazon S3 bucket in the AWS account that the Toolkit will use for packaging and deploying the serverless application. The bucket must exist within the AWS Region that you chose in the previous step.</li>
+<li>Specifying a name for the AWS CloudFormation stack to which the serverless application will be deployed.</li>
+</ol>
+</li>
+<li><p>Note the status and results in the <strong>OUTPUT</strong> panel. The serverless application is deployed to an AWS CloudFormation stack. If the stack already exists, it is updated; otherwise, a new stack is created. Within a few minutes, the Toolkit displays a deployment success or failure message.</p>
+<p><img src="!!EXTENSIONROOT!!/resources/marketplace/sam-deploy-still-2.png" alt="Deploy SAM Application 1"></p>
+</li>
+<li><p>In the <strong>AWS Explorer</strong>, expand the AWS Region that contains the stack, then expand <strong>CloudFormation</strong>. Expand the stack that you want to manage and open the context menu of its resources.</p>
+<p>For example:</p>
+<p><img src="!!EXTENSIONROOT!!/resources/marketplace/cloudformation-stack-example.png" alt="Deploy SAM Application 1"></p>
+</li>
+</ol>
+<p>{ <a href="#developing-serverless-applications">Return to Developing</a> } or { <a href="#usage">Return to Usage</a> }</p>
+<hr>
+<h1 id="a-idget-helpaget-help"><a id="get-help"></a>Get Help</h1>
+<p>For additional details on how to use the AWS Toolkit for Visual Studio Code, see the <a href="https://docs.aws.amazon.com/console/toolkit-for-vscode/welcome">user guide</a>.</p>
+<p>To report issues with the AWS Toolkit for Visual Studio Code or to propose Toolkit code changes, see the <a href="https://github.com/aws/aws-toolkit-vscode">aws/aws-toolkit-vscode</a> repository on GitHub.</p>
+<p>You can also <a href="https://aws.amazon.com/contact-us/">contact AWS</a> directly.</p>
+<p>{ <a href="#contents">Return to Contents</a> } or { <a href="#top">Return to Top</a> }</p>

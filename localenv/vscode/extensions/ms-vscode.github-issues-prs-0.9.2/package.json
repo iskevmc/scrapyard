@@ -1,0 +1,210 @@
+{
+	"name": "github-issues-prs",
+	"displayName": "GitHub Issues",
+	"description": "View the issues assigned to you in the Explorer viewlet.",
+	"version": "0.9.2",
+	"publisher": "ms-vscode",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Microsoft/vscode-github-issues-prs.git"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Microsoft/vscode-github-issues-prs/issues"
+	},
+	"engines": {
+		"vscode": "^1.31.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"multi-root ready"
+	],
+	"activationEvents": [
+		"onView:githubIssuesPrs"
+	],
+	"main": "./out/src/extension",
+	"icon": "images/icon.png",
+	"contributes": {
+		"views": {
+			"explorer": [
+				{
+					"id": "githubIssuesPrs",
+					"name": "GitHub Issues"
+				}
+			]
+		},
+		"commands": [
+			{
+				"command": "githubIssuesPrs.refresh",
+				"title": "Refresh",
+				"icon": {
+					"light": "resources/light/refresh.svg",
+					"dark": "resources/dark/refresh.svg"
+				}
+			},
+			{
+				"command": "githubIssuesPrs.createIssue",
+				"title": "Create Issue",
+				"icon": {
+					"light": "thirdparty/octicons/light/plus-small.svg",
+					"dark": "thirdparty/octicons/dark/plus-small.svg"
+				}
+			},
+			{
+				"command": "githubIssuesPrs.openMilestone",
+				"title": "Open Milestone"
+			},
+			{
+				"command": "githubIssuesPrs.openIssue",
+				"title": "Open Issue"
+			},
+			{
+				"command": "githubIssuesPrs.openPullRequest",
+				"title": "Open Pull Request"
+			},
+			{
+				"command": "githubIssuesPrs.checkoutPullRequest",
+				"title": "Checkout Pull Request"
+			},
+			{
+				"command": "githubIssuesPrs.copyNumber",
+				"title": "Copy Number"
+			},
+			{
+				"command": "githubIssuesPrs.copyText",
+				"title": "Copy Text"
+			},
+			{
+				"command": "githubIssuesPrs.copyMarkdown",
+				"title": "Copy Markdown"
+			},
+			{
+				"command": "githubIssuesPrs.copyUrl",
+				"title": "Copy Url"
+			}
+		],
+		"menus": {
+			"view/title": [
+				{
+					"command": "githubIssuesPrs.refresh",
+					"when": "view == githubIssuesPrs",
+					"group": "navigation"
+				},
+				{
+					"command": "githubIssuesPrs.createIssue",
+					"when": "view == githubIssuesPrs",
+					"group": "navigation"
+				}
+			],
+			"view/item/context": [
+				{
+					"command": "githubIssuesPrs.openMilestone",
+					"when": "view == githubIssuesPrs && viewItem == milestone",
+					"group": "1_navigation"
+				},
+				{
+					"command": "githubIssuesPrs.openIssue",
+					"when": "view == githubIssuesPrs && viewItem == issue",
+					"group": "1_navigation"
+				},
+				{
+					"command": "githubIssuesPrs.copyNumber",
+					"when": "view == githubIssuesPrs && viewItem == issue",
+					"group": "9_cutcopypaste"
+				},
+				{
+					"command": "githubIssuesPrs.copyText",
+					"when": "view == githubIssuesPrs && viewItem == issue",
+					"group": "9_cutcopypaste"
+				},
+				{
+					"command": "githubIssuesPrs.copyMarkdown",
+					"when": "view == githubIssuesPrs && viewItem == issue",
+					"group": "9_cutcopypaste"
+				},
+				{
+					"command": "githubIssuesPrs.copyUrl",
+					"when": "view == githubIssuesPrs && viewItem == issue",
+					"group": "9_cutcopypaste"
+				},
+				{
+					"command": "githubIssuesPrs.openPullRequest",
+					"when": "view == githubIssuesPrs && viewItem == pull_request",
+					"group": "1_navigation"
+				},
+				{
+					"command": "githubIssuesPrs.checkoutPullRequest",
+					"when": "view == githubIssuesPrs && viewItem == pull_request",
+					"group": "1_navigation"
+				},
+				{
+					"command": "githubIssuesPrs.copyNumber",
+					"when": "view == githubIssuesPrs && viewItem == pull_request",
+					"group": "9_cutcopypaste"
+				},
+				{
+					"command": "githubIssuesPrs.copyText",
+					"when": "view == githubIssuesPrs && viewItem == pull_request",
+					"group": "9_cutcopypaste"
+				},
+				{
+					"command": "githubIssuesPrs.copyMarkdown",
+					"when": "view == githubIssuesPrs && viewItem == pull_request",
+					"group": "9_cutcopypaste"
+				},
+				{
+					"command": "githubIssuesPrs.copyUrl",
+					"when": "view == githubIssuesPrs && viewItem == pull_request",
+					"group": "9_cutcopypaste"
+				}
+			]
+		},
+		"configuration": {
+			"type": "object",
+			"title": "GitHub configuration",
+			"properties": {
+				"github.username": {
+					"type": [
+						"string",
+						"null"
+					],
+					"default": null,
+					"description": "The username to use when accessing GitHub. The default is to consult the Git credential manager."
+				},
+				"github.repositories": {
+					"type": "array",
+					"default": [],
+					"description": "A list of repositories to query for issues."
+				},
+				"github.host": {
+					"type": "string",
+					"default": "github.com",
+					"description": "The host name to access GitHub. Change this to your GitHub Enterprise host."
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"@types/node": "10.3.0",
+		"tslint": "5.18.0",
+		"typescript": "3.3.4000",
+		"vscode": "1.1.33"
+	},
+	"dependencies": {
+		"@octokit/rest": "15.18.1",
+		"git-credential-node": "1.1.0",
+		"moment": "2.24.0"
+	},
+	"__metadata": {
+		"id": "04ebe680-6c3c-4882-8310-26b324b72bfe",
+		"publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+		"publisherDisplayName": "Microsoft"
+	}
+}

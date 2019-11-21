@@ -1,0 +1,286 @@
+{
+	"name": "vscode-ansible",
+	"displayName": "Ansible",
+	"description": "VSCode extension for Ansible",
+	"license": "SEE LICENSE IN LICENSE.md",
+	"version": "0.5.2",
+	"publisher": "vscoss",
+	"icon": "images/logo.png",
+	"engines": {
+		"vscode": "^1.18.0"
+	},
+	"categories": [
+		"Other",
+		"Snippets"
+	],
+	"keywords": [
+		"ansible",
+		"playbook",
+		"snippets",
+		"ansible module"
+	],
+	"aiKey": "670060a9-86f4-4273-bd35-972087d5da34",
+	"repository": {
+		"url": "https://github.com/VSChina/vscode-ansible.git"
+	},
+	"homepage": "https://github.com/VSChina/vscode-ansible/blob/master/README.md",
+	"activationEvents": [
+		"onLanguage:yaml",
+		"onLanguage:ansible",
+		"onCommand:vscode-ansible.cloudshell",
+		"onCommand:vscode-ansible.playbook-in-docker",
+		"onCommand:vscode-ansible.playbook-in-localansible",
+		"onCommand:vscode-ansible.ssh",
+		"onCommand:vscode-ansible.sync-folder-ssh",
+		"onCommand:vscode-ansible.resource-module-samples"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"languages": [
+			{
+				"id": "ansible",
+				"alias": [
+					"ansible"
+				],
+				"extensions": [
+					"ansible"
+				],
+				"configuration": "./syntaxes/language-configuration.json"
+			}
+		],
+		"commands": [
+			{
+				"command": "vscode-ansible.cloudshell",
+				"title": "Run Ansible Playbook in Cloud Shell",
+				"category": "Ansible"
+			},
+			{
+				"command": "vscode-ansible.playbook-in-docker",
+				"title": "Run Ansible Playbook in Docker",
+				"category": "Ansible"
+			},
+			{
+				"command": "vscode-ansible.playbook-in-localansible",
+				"title": "Run Ansible Playbook in Local Ansible",
+				"category": "Ansible"
+			},
+			{
+				"command": "vscode-ansible.ssh",
+				"title": "Run Ansible Playbook Remotely via ssh",
+				"category": "Ansible"
+			},
+			{
+				"command": "vscode-ansible.sync-folder-ssh",
+				"title": "Copy folder to Remote Host",
+				"category": "Ansible"
+			},
+			{
+				"command": "vscode-ansible.resource-module-samples",
+				"title": "Samples for azure_rm_resource (PREVIEW)",
+				"category": "Ansible"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "vscode-ansible.playbook-in-docker",
+					"when": "resourceLangId == yaml",
+					"group": "vscode-ansible@1"
+				},
+				{
+					"command": "vscode-ansible.playbook-in-localansible",
+					"when": "resourceLangId == yaml",
+					"group": "vscode-ansible@2"
+				},
+				{
+					"command": "vscode-ansible.cloudshell",
+					"when": "resourceLangId == yaml",
+					"group": "vscode-ansible@3"
+				},
+				{
+					"command": "vscode-ansible.ssh",
+					"when": "resourceLangId == yaml",
+					"group": "vscode-ansible@4"
+				},
+				{
+					"command": "vscode-ansible.playbook-in-docker",
+					"when": "resourceLangId == ansible",
+					"group": "vscode-ansible@1"
+				},
+				{
+					"command": "vscode-ansible.playbook-in-localansible",
+					"when": "resourceLangId == ansible",
+					"group": "vscode-ansible@2"
+				},
+				{
+					"command": "vscode-ansible.cloudshell",
+					"when": "resourceLangId == ansible",
+					"group": "vscode-ansible@3"
+				},
+				{
+					"command": "vscode-ansible.ssh",
+					"when": "resourceLangId == ansible",
+					"group": "vscode-ansible@4"
+				}
+			],
+			"editor/title/context": [
+				{
+					"command": "vscode-ansible.playbook-in-docker",
+					"when": "resourceLangId == yaml",
+					"group": "vscode-ansible@1"
+				},
+				{
+					"command": "vscode-ansible.playbook-in-localansible",
+					"when": "resourceLangId == yaml",
+					"group": "vscode-ansible@2"
+				},
+				{
+					"command": "vscode-ansible.cloudshell",
+					"when": "resourceLangId == yaml",
+					"group": "vscode-ansible@3"
+				},
+				{
+					"command": "vscode-ansible.ssh",
+					"when": "resourceLangId == yaml",
+					"group": "vscode-ansible@4"
+				},
+				{
+					"command": "vscode-ansible.playbook-in-docker",
+					"when": "resourceLangId == ansible",
+					"group": "vscode-ansible@1"
+				},
+				{
+					"command": "vscode-ansible.playbook-in-localansible",
+					"when": "resourceLangId == ansible",
+					"group": "vscode-ansible@2"
+				},
+				{
+					"command": "vscode-ansible.cloudshell",
+					"when": "resourceLangId == ansible",
+					"group": "vscode-ansible@3"
+				},
+				{
+					"command": "vscode-ansible.ssh",
+					"when": "resourceLangId == ansible",
+					"group": "vscode-ansible@4"
+				}
+			]
+		},
+		"grammars": [
+			{
+				"language": "ansible",
+				"scopeName": "source.ansible",
+				"path": "./syntaxes/Ansible.tmLanguage"
+			}
+		],
+		"configuration": {
+			"title": "Ansible Extension Configuration",
+			"type": "object",
+			"properties": {
+				"ansible.credentialsFile": {
+					"type": "string",
+					"default": "",
+					"description": "Ansible credential file path"
+				},
+				"ansible.terminalInitCommand": {
+					"type": "string",
+					"default": "default",
+					"description": "Command to be run in terminal after it starts"
+				},
+				"ansible.credentialsConfigured": {
+					"type": "boolean",
+					"default": false
+				},
+				"ansible.cloudShellConfirmed": {
+					"type": "boolean",
+					"default": false
+				},
+				"ansible.hover": {
+					"type": "boolean",
+					"default": true,
+					"description": "Enable/Disable hover over on module name"
+				},
+				"ansible.validation": {
+					"type": "boolean",
+					"default": true,
+					"description": "Enable/Disable validation on yaml content"
+				},
+				"ansible.autocompletion": {
+					"type": "boolean",
+					"default": true,
+					"description": "Enable/Disable ansible autocompletion"
+				},
+				"ansible.reuseSSHTerminal": {
+					"type": "boolean",
+					"default": true,
+					"description": "Enable/Disable reusing SSH terminal session"
+				},
+				"ansible.customOptions": {
+					"type": "string",
+					"default": "",
+					"description": "Custom options to run ansible playbook. eg. -i inventoryfile -vvv"
+				},
+				"ansible.fileCopyConfig": {
+					"type": "array",
+					"default": "",
+					"description": "Config file copying to remote host, including weather copy file on save. E.g. [ { \"server\": \"host\", \"sourcePath\":\"/mypath/\", \"targetPath\": \"/destpath/\", \"copyOnSave\", \"true\" }]"
+				},
+				"ansible.dockerImage": {
+					"type": "string",
+					"default": "microsoft/ansible:latest",
+					"description": "Custom docker image when running playbook in Docker."
+				},
+				"ansible.azureRestSpec": {
+					"type": "string",
+					"default": "",
+					"description": "Location of Azure REST specification."
+				}
+			}
+		}
+	},
+	"scripts": {
+		"compile": "cd server && npm install && cd .. && tsc -p ./ && tsc -p server/",
+		"eslint": "node ./node_modules/eslint/bin/eslint.js .",
+		"pkgvars": "node ./node_modules/vscode/bin/install",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test",
+		"vscode:prepublish": "tsc -p ./",
+		"watch": "tsc -watch -p ./"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.48",
+		"@types/node": "8.0.53",
+		"eslint": "^4.19.1",
+		"typescript": "^2.9.2",
+		"vscode": "^1.1.21"
+	},
+	"dependencies": {
+		"azure-arm-resource": "^3.0.0-preview",
+		"azure-storage": "^2.10.1",
+		"fs-extra": "^4.0.2",
+		"fuzzaldrin-plus": "^0.6.0",
+		"git-clone": "^0.1.0",
+		"ms-rest": "^2.3.6",
+		"ms-rest-azure": "^2.5.7",
+		"opn": "^5.3.0",
+		"os": "^0.1.1",
+		"path": "^0.12.7",
+		"request": "^2.88.0",
+		"request-promise": "^4.2.2",
+		"scp2": "^0.5.0",
+		"semver": "5.4.1",
+		"ssh-exec": "^2.0.0",
+		"ssh2": "^0.5.5",
+		"vscode-extension-telemetry": "^0.0.18",
+		"vscode-languageclient": "^3.5.1",
+		"vscode-languageserver-protocol": "3.5.0",
+		"vscode-nls": "^2.0.2",
+		"ws": "^3.3.2",
+		"yamljs": "^0.3.0"
+	},
+	"__metadata": {
+		"id": "2b05803e-d7e9-433f-bce9-255e4d4ad79e",
+		"publisherId": "94cfcc3c-c5f9-441a-8175-e909a07d16e9",
+		"publisherDisplayName": "Microsoft"
+	}
+}

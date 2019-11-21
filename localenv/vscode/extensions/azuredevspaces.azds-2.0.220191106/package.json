@@ -1,0 +1,136 @@
+{
+	"name": "azds",
+	"displayName": "Azure Dev Spaces",
+	"description": "Rapid Kubernetes development for teams",
+	"version": "2.0.220191106",
+	"icon": "images/azds.png",
+	"preview": false,
+	"publisher": "azuredevspaces",
+	"qna": "marketplace",
+	"license": "SEE LICENSE IN LICENSE.md",
+	"engines": {
+		"vscode": "^1.35.1"
+	},
+	"categories": [
+		"Azure",
+		"Other"
+	],
+	"keywords": [
+		"container",
+		"Azure Dev Spaces",
+		"docker",
+		"kubernetes",
+		"azds"
+	],
+	"activationEvents": [
+		"onCommand:azds.prep",
+		"onWebviewPanel:azdsSurvey",
+		"*",
+		"onCommand:azds.connect",
+		"workspaceContains:azds.yaml"
+	],
+	"aiKey": "AIF-d9b70cd4-b9f9-4d70-929b-a071c400b217",
+	"main": "./out/ExtensionHost",
+	"contributes": {
+		"commands": [
+			{
+				"command": "azds.prep",
+				"title": "Prepare configuration files for Azure Dev Spaces",
+				"category": "Azure Dev Spaces"
+			},
+			{
+				"command": "azds.toggleDevSpacesEnablement",
+				"title": "Enable/Disable Dev Spaces",
+				"category": "Azure Dev Spaces"
+			},
+			{
+				"command": "azds.connect.service",
+				"title": "Redirect an existing Kubernetes service to my machine [Preview]",
+				"category": "Azure Dev Spaces"
+			},
+			{
+				"command": "azds.connect.pod",
+				"title": "Redirect an existing Kubernetes pod to my machine [Preview]",
+				"category": "Azure Dev Spaces"
+			},
+			{
+				"command": "azds.connect.new",
+				"title": "Redirect a new Kubernetes pod to my machine [Preview]",
+				"category": "Azure Dev Spaces"
+			},
+			{
+				"command": "azds.connect.disconnect",
+				"title": "Disconnect current session [Preview]",
+				"category": "Azure Dev Spaces"
+			}
+		],
+		"menus": {
+			"view/item/context": [
+				{
+					"command": "azds.toggleDevSpacesEnablement",
+					"when": "viewItem =~ /aks\\.cluster/i"
+				}
+			],
+			"commandPalette": [
+				{
+					"command": "azds.connect.disconnect",
+					"when": "azds.connect.connected"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"vscode:package": "node ./node_modules/vsce/out/vsce package",
+		"compile": "del-cli out/template && tsc -p ./ && node ./node_modules/copy/bin/cli.js ./src/template/**/* out/template",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"extensionDependencies": [
+		"ms-kubernetes-tools.vscode-aks-tools"
+	],
+	"devDependencies": {
+		"@types/mocha": "^5.2.7",
+		"@types/node": "^11.13.17",
+		"typescript": "^3.5.3",
+		"vsce": "^1.65.0",
+		"vscode": "^1.1.35",
+		"del-cli": "^0.2.1"
+	},
+	"dependencies": {
+		"@types/tmp": "^0.1.0",
+		"azure-arm-resource": "^7.3.0",
+		"command-exists": "^1.2.8",
+		"copy": "^0.3.2",
+		"get-port": "^4.2.0",
+		"glob": "^7.1.4",
+		"glob-promise": "^3.4.0",
+		"guid-typescript": "^1.0.9",
+		"js-yaml": "^3.13.1",
+		"moment": "^2.24.0",
+		"ms-rest": "^2.5.3",
+		"ms-rest-azure": "^3.0.0",
+		"opener": "^1.5.1",
+		"osenv": "^0.1.5",
+		"portfinder": "^1.0.20",
+		"request": "^2.88.0",
+		"request-promise-native": "^1.0.7",
+		"telaug": "0.0.13",
+		"tmp": "^0.1.0",
+		"vscode-extension-telemetry": "^0.1.1",
+		"vscode-kubernetes-tools-api": "^1.0.0",
+		"xmldom": "^0.1.27",
+		"xpath": "^0.0.27"
+	},
+	"homepage": "https://aka.ms/get-azds",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Azure/dev-spaces"
+	},
+	"__metadata": {
+		"id": "0bd7ef25-91eb-4e9a-acb5-e9df9c5f6b0e",
+		"publisherId": "2e00f83b-4160-469a-9e04-d566804776ff",
+		"publisherDisplayName": "Microsoft"
+	}
+}
