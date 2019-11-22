@@ -25,10 +25,10 @@
     "terminal.integrated.cursorStyle": "line",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "vs-kubernetes": {
-        "vs-kubernetes.kubectl-path": "/Users/sk8bit/.vs-kubernetes/tools/kubectl/kubectl",
-        "vs-kubernetes.minikube-path": "/Users/sk8bit/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
-        "vs-kubernetes.draft-path": "/Users/sk8bit/.vs-kubernetes/tools/draft/darwin-amd64/draft",
-        "vs-kubernetes.helm-path": "/Users/sk8bit/.vs-kubernetes/tools/helm/darwin-amd64/helm"
+        "vs-kubernetes.kubectl-path": "~/.vs-kubernetes/tools/kubectl/kubectl",
+        "vs-kubernetes.minikube-path": "~/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+        "vs-kubernetes.draft-path": "~/.vs-kubernetes/tools/draft/darwin-amd64/draft",
+        "vs-kubernetes.helm-path": "~/.vs-kubernetes/tools/helm/darwin-amd64/helm"
     },
     "aws.telemetry": true,
     "cloudcode.autoDependencies": "on",
