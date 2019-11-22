@@ -1,4 +1,5 @@
 alias ll='ls -lahG'
+alias lla='ls -la'
 alias chrome="open -a \"Google Chrome\".app"
 
 if  [[ -f "~/.git-completion.bash" ]]; then
@@ -6,15 +7,15 @@ if  [[ -f "~/.git-completion.bash" ]]; then
 fi
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/sk8bit/Desktop/google-cloud-sdk/path.bash.inc' ]; then source '/Users/sk8bit/Desktop/google-cloud-sdk/path.bash.inc'; fi
+if [ -f '~/Desktop/google-cloud-sdk/path.bash.inc' ]; then source '~/Desktop/google-cloud-sdk/path.bash.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/sk8bit/Desktop/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/sk8bit/Desktop/google-cloud-sdk/completion.bash.inc'; fi
+if [ -f '~/Desktop/google-cloud-sdk/completion.bash.inc' ]; then source '~/Desktop/google-cloud-sdk/completion.bash.inc'; fi
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
 #Path Settings
-export PATH=$PATH:/Users/username/Terraform/
+export PATH=$PATH:${HOME}/Terraform/
 
 # Setting PATH for Python 2.7
 # The original version is saved in .bash_profile.pysave
