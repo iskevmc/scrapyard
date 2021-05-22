@@ -13,8 +13,10 @@
     "workbench.editor.highlightModifiedTabs": true,
     "team.showWelcomeMessage": false,
     "terraform.languageServer": {
-        "enabled": true,
-        "args": []
+        "external": true,
+        "args": [
+            "serve"
+        ]
     },
     "terminal.external.osxExec": "iTerm.app",
     "terminal.explorerKind": "external",
@@ -25,12 +27,60 @@
     "terminal.integrated.cursorStyle": "line",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "vs-kubernetes": {
-        "vs-kubernetes.kubectl-path": "~/.vs-kubernetes/tools/kubectl/kubectl",
-        "vs-kubernetes.minikube-path": "~/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
-        "vs-kubernetes.draft-path": "~/.vs-kubernetes/tools/draft/darwin-amd64/draft",
-        "vs-kubernetes.helm-path": "~/.vs-kubernetes/tools/helm/darwin-amd64/helm"
+        "vs-kubernetes.kubectl-path": "/Users/sk8bit/.vs-kubernetes/tools/kubectl/kubectl",
+        "vs-kubernetes.minikube-path": "/Users/sk8bit/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+        "vs-kubernetes.draft-path": "/Users/sk8bit/.vs-kubernetes/tools/draft/darwin-amd64/draft",
+        "vs-kubernetes.helm-path": "/Users/sk8bit/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+        "vs-kubernetes.minikube-path.mac": "/Users/iamkmc/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+        "vs-kubernetes.kubectl-path.mac": "/Users/iamkmc/.vs-kubernetes/tools/kubectl/kubectl",
+        "vs-kubernetes.draft-path.mac": "/Users/iamkmc/.vs-kubernetes/tools/draft/darwin-amd64/draft",
+        "vs-kubernetes.helm-path.mac": "/Users/iamkmc/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+        "vscode-kubernetes.minikube-path.mac": "/Users/iamkmc/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
     },
-    "aws.telemetry": true,
     "cloudcode.autoDependencies": "on",
-    "workbench.colorTheme": "One Dark Pro"
+    "workbench.colorTheme": "One Dark Pro",
+    "markdownlint.customRules": [
+        "{docsmsft.docs-markdown}/markdownlint-custom-rules/rules.js"
+    ],
+    "markdownlint.config": {
+        "MD025": {
+            "front_matter_title": ""
+        }
+    },
+    "team.showFarewellMessage": false,
+    "yaml.schemas": {
+        "file:///toc.schema.json": "/toc\\.yml/i"
+    },
+    "redhat.telemetry.enabled": true,
+    "tabnine.experimentalAutoImports": true,
+    "yaml.customTags": [
+        "!And",
+        "!And sequence",
+        "!If",
+        "!If sequence",
+        "!Not",
+        "!Not sequence",
+        "!Equals",
+        "!Equals sequence",
+        "!Or",
+        "!Or sequence",
+        "!FindInMap",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Join",
+        "!Join sequence",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!Sub sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!ImportValue sequence",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Split sequence"
+    ],
+    "yaml.validate": false
 }
