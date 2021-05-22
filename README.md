@@ -1,2 +1,3 @@
 ## Scripts & Tricks
-Scripts for oodles of things
+- Suggested configs for local dev env
+- Random shellscripts (Linux/macOS) for future reference
