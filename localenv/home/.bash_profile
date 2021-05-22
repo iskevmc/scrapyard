@@ -1,5 +1,7 @@
 alias ll='ls -lahG'
 alias lla='ls -la'
+alias cl='clear'
+alias his='history'
 alias chrome="open -a \"Google Chrome\".app"
 
 if  [[ -f "~/.git-completion.bash" ]]; then
