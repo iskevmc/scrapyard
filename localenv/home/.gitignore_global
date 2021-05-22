@@ -1,4 +1,6 @@
 .DS_Store
 .Trashes
 .Spotlight-V100
-
+.gitignore
+*.log
+*.orig
