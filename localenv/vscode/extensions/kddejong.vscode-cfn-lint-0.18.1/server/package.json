@@ -1,0 +1,21 @@
+{
+	"name": "vscode-cfn-lintr",
+	"description": "CloudFormation Lint Server",
+	"author": "Kevin DeJong",
+	"license": "Apache-2.0",
+	"version": "0.0.1",
+	"publisher": "",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/awslabs/aws-cfn-lint-visual-studio-code.git"
+	},
+	"engines": {
+		"node": "*"
+	},
+	"dependencies": {
+		"commander": "^3.0.2",
+		"vscode-languageserver": "^5.2.1",
+		"vscode-uri": "^2.1.1"
+	},
+	"scripts": {}
+}

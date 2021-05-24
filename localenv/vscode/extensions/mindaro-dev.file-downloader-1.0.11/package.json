@@ -1,0 +1,68 @@
+{
+	"name": "file-downloader",
+	"displayName": "File Downloader",
+	"description": "Exposes an API that allows other extensions to download files.",
+	"publisher": "mindaro-dev",
+	"license": "MIT",
+	"version": "1.0.11",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/microsoft/vscode-file-downloader.git"
+	},
+	"engines": {
+		"vscode": "^1.41.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [],
+	"main": "./dist/extension",
+	"contributes": {
+		"commands": []
+	},
+	"scripts": {
+		"vscode:prepublish": "webpack --mode production",
+		"compile": "npm run webpack",
+		"lint": "eslint src --ext ts --fix",
+		"webpack": "webpack --mode development",
+		"webpack-dev": "webpack --mode development --watch",
+		"test-compile": "tsc -p ./ && npm run webpack"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.2",
+		"@types/mocha": "^7.0.2",
+		"@types/node": "^14.14.11",
+		"@types/rimraf": "^3.0.0",
+		"@types/unzipper": "^0.10.3",
+		"@types/uuid": "^8.0.0",
+		"@types/vscode": "^1.41.0",
+		"@typescript-eslint/eslint-plugin": "^3.4.0",
+		"@typescript-eslint/parser": "^3.4.0",
+		"eslint": "^7.3.1",
+		"eslint-plugin-import": "^2.20.2",
+		"eslint-plugin-jsdoc": "^25.4.1",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-prefer-arrow": "^1.2.1",
+		"eslint-plugin-tslint": "^3.1.0",
+		"glob": "^7.1.2",
+		"license-checker-webpack-plugin": "^0.1.5",
+		"mocha": "^7.0.2",
+		"ts-loader": "^7.0.5",
+		"typescript": "^3.5.3",
+		"vscode-test": "^1.0.0",
+		"webpack": "^4.43.0",
+		"webpack-cli": "^3.3.12"
+	},
+	"dependencies": {
+		"extract-zip": "^2.0.1",
+		"axios": "^0.21.1",
+		"rimraf": "^3.0.2",
+		"uuid": "^8.0.0"
+	},
+	"__metadata": {
+		"id": "c5f9ea77-0f11-4bd6-9736-341deca7a35c",
+		"publisherId": "97e766f7-1f38-40b1-a82c-3a8483d509fd",
+		"publisherDisplayName": "Microsoft DevLabs",
+		"installedTimestamp": 1621537164373
+	}
+}
