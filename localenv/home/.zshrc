@@ -104,3 +104,7 @@ alias ohmyzsh="code ~/.oh-my-zsh"
 alias chrome="open -a \"Google Chrome\".app"
 alias ll='ls -lahG'
 alias lla='ls -la'
+alias cl='clear'
+alias his='history'
+alias python=/usr/local/bin/python3
+alias pip=/usr/local/bin/pip3
