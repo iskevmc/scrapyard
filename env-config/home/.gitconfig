@@ -1,6 +1,6 @@
 [user]
-	name = McLeod
-	email = iskevmc@gmail.com
+	name = insert-name
+	email = insert-email
 [core]
 	editor = code --wait
 	pager = less -R
