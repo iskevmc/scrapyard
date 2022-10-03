@@ -49,7 +49,7 @@
     },
     "team.showFarewellMessage": false,
     "yaml.schemas": {
-        "file:///toc.schema.json": "/toc\\.yml/i"
+        "file:///Users/iamkmc/.vscode/extensions/docsmsft.docs-yaml-0.2.9/out/yaml-support/toc.schema.json": "/toc\\.yml/i"
     },
     "redhat.telemetry.enabled": true,
     "tabnine.experimentalAutoImports": true,
@@ -82,5 +82,20 @@
         "!Split",
         "!Split sequence"
     ],
-    "yaml.validate": false
+    "yaml.validate": false,
+    "explorer.confirmDelete": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "python.defaultInterpreterPath": "/usr/local/bin/python3",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "json.schemas": [],
+    "editor.suggest.showMethods": true,
+    "editor.suggest.preview": true,
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.snippetSuggestions": "top",
+    "aws.profile": "profile:default"
 }
