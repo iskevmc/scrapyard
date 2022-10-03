@@ -11,6 +11,4 @@ if  [[ -f "~/.git-completion.bash" ]]; then
 fi
 
 #Path Settings
-export PATH=$PATH:${HOME}/Terraform/
-
 export PATH="/usr/local/sbin:$PATH"
