@@ -25,6 +25,9 @@
     "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.env.osx": {
+        "PYTHONPATH": "${workspaceFolder}/src",
+    },
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "vs-kubernetes": {
         "vs-kubernetes.kubectl-path": "/Users/sk8bit/.vs-kubernetes/tools/kubectl/kubectl",
@@ -35,7 +38,8 @@
         "vs-kubernetes.kubectl-path.mac": "/Users/iamkmc/.vs-kubernetes/tools/kubectl/kubectl",
         "vs-kubernetes.draft-path.mac": "/Users/iamkmc/.vs-kubernetes/tools/draft/darwin-amd64/draft",
         "vs-kubernetes.helm-path.mac": "/Users/iamkmc/.vs-kubernetes/tools/helm/darwin-amd64/helm",
-        "vscode-kubernetes.minikube-path.mac": "/Users/iamkmc/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+        "vscode-kubernetes.minikube-path.mac": "/Users/iamkmc/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+        "vscode-kubernetes.minikube-path-mac": "/Users/iamkmc/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
     },
     "cloudcode.autoDependencies": "on",
     "workbench.colorTheme": "One Dark Pro",
@@ -49,7 +53,7 @@
     },
     "team.showFarewellMessage": false,
     "yaml.schemas": {
-        "file:///Users/iamkmc/.vscode/extensions/docsmsft.docs-yaml-0.2.9/out/yaml-support/toc.schema.json": "/toc\\.yml/i"
+        "file:///Users/iamkmc/.vscode/extensions/docsmsft.docs-yaml-1.0.0/dist/toc.schema.json": "/toc\\.yml/i"
     },
     "redhat.telemetry.enabled": true,
     "tabnine.experimentalAutoImports": true,
@@ -97,5 +101,9 @@
     "editor.suggest.preview": true,
     "editor.acceptSuggestionOnEnter": "on",
     "editor.snippetSuggestions": "top",
-    "aws.profile": "profile:default"
+    "go.toolsManagement.autoUpdate": true,
+    "python.terminal.activateEnvironment": false,
+    "python.analysis.extraPaths": [
+        "~/src"
+    ]
 }
