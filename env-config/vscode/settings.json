@@ -30,16 +30,16 @@
     },
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "vs-kubernetes": {
-        "vs-kubernetes.kubectl-path": "/Users/iamkmc/.vs-kubernetes/tools/kubectl/kubectl",
-        "vs-kubernetes.minikube-path": "/Users/iamkmc/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
-        "vs-kubernetes.draft-path": "/Users/iamkmc/.vs-kubernetes/tools/draft/darwin-amd64/draft",
-        "vs-kubernetes.helm-path": "/Users/iamkmc/.vs-kubernetes/tools/helm/darwin-amd64/helm",
-        "vs-kubernetes.minikube-path.mac": "/Users/iamkmc/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
-        "vs-kubernetes.kubectl-path.mac": "/Users/iamkmc/.vs-kubernetes/tools/kubectl/kubectl",
-        "vs-kubernetes.draft-path.mac": "/Users/iamkmc/.vs-kubernetes/tools/draft/darwin-amd64/draft",
-        "vs-kubernetes.helm-path.mac": "/Users/iamkmc/.vs-kubernetes/tools/helm/darwin-amd64/helm",
-        "vscode-kubernetes.minikube-path.mac": "/Users/iamkmc/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
-        "vscode-kubernetes.minikube-path-mac": "/Users/iamkmc/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+        "vs-kubernetes.kubectl-path": "/Users/${USER}/.vs-kubernetes/tools/kubectl/kubectl",
+        "vs-kubernetes.minikube-path": "/Users/${USER}/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+        "vs-kubernetes.draft-path": "/Users/${USER}/.vs-kubernetes/tools/draft/darwin-amd64/draft",
+        "vs-kubernetes.helm-path": "/Users/${USER}/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+        "vs-kubernetes.minikube-path.mac": "/Users/${USER}/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+        "vs-kubernetes.kubectl-path.mac": "/Users/${USER}/.vs-kubernetes/tools/kubectl/kubectl",
+        "vs-kubernetes.draft-path.mac": "/Users/${USER}/.vs-kubernetes/tools/draft/darwin-amd64/draft",
+        "vs-kubernetes.helm-path.mac": "/Users/${USER}/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+        "vscode-kubernetes.minikube-path.mac": "/Users/${USER}/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+        "vscode-kubernetes.minikube-path-mac": "/Users/${USER}/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
     },
     "cloudcode.autoDependencies": "on",
     "workbench.colorTheme": "One Dark Pro",
@@ -53,7 +53,7 @@
     },
     "team.showFarewellMessage": false,
     "yaml.schemas": {
-        "file:///Users/iamkmc/.vscode/extensions/docsmsft.docs-yaml-1.0.0/dist/toc.schema.json": "/toc\\.yml/i"
+        "file:///Users/${USER}/.vscode/extensions/docsmsft.docs-yaml-1.0.0/dist/toc.schema.json": "/toc\\.yml/i"
     },
     "redhat.telemetry.enabled": true,
     "tabnine.experimentalAutoImports": true,
